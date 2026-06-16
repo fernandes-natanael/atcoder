@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
+      "projectUniqueName": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
+      "projectPath": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
       "packagesPath": "/home/ntl/.nuget/packages/",
-      "outputPath": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/obj/",
+      "outputPath": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ntl/.nuget/NuGet/NuGet.Config"

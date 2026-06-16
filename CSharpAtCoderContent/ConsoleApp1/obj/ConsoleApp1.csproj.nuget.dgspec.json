@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj": {}
+    "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj": {}
   },
   "projects": {
-    "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj": {
+    "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
+        "projectUniqueName": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
+        "projectPath": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/ConsoleApp1.csproj",
         "packagesPath": "/home/ntl/.nuget/packages/",
-        "outputPath": "/home/ntl/RiderProjects/AtCoderContent/ConsoleApp1/obj/",
+        "outputPath": "/home/ntl/workspace/atcoder/CSharpAtCoderContent/ConsoleApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ntl/.nuget/NuGet/NuGet.Config"
