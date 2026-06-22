@@ -1,26 +1,36 @@
-﻿var input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+﻿var n = int.Parse(Console.ReadLine()!);
+Dictionary<int, int> dict = new();
 
-var n = input[0];
-var d = input[1];
-long[] items = new long[1_000_001];
-//long[] items = new long[50];
 
-long ans = 0;
-long count = 0;
 for (int i = 0; i < n; ++i)
 {
-    var inp =  Console.ReadLine()!.Split().Select(long.Parse).ToArray();
-    var max = inp[1] - d;
-    if (inp[0] > max) continue;
-    items[inp[0]]++;
-    items[max + 1]--;
+    var entries = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
+    if (!dict.ContainsKey(entries[1]))
+    {
+        dict.Add(entries[1], entries[0]);
+    }
+    var actual = dict[entries[1]];
+    if (entries[0] > actual)
+    {
+        dict[entries[1]] = entries[0];
+    }
 }
 
-for (int i = 0; i < items.Length; ++i)
-{ 
-    count +=  items[i];
-    ans += count * (count - 1) / 2;
-    //Console.WriteLine($"{i}: {items[i]} count = {count} comb={count * (count - 1) / 2} ans {ans}");
-}
 
-Console.WriteLine(ans);
+var q = int.Parse(Console.ReadLine()!);
+var list = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
+foreach (var quer in  list)
+{
+    var bAct = -1;
+
+    foreach (var i in dict)
+    {
+        if(quer >= i.Key) continue;
+        if (i.Value > bAct) 
+        {
+            bAct = i.Value;
+        }
+    }
+    Console.WriteLine(bAct);
+
+}
