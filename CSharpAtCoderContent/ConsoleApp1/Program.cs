@@ -1,36 +1,21 @@
-﻿var n = int.Parse(Console.ReadLine()!);
-Dictionary<int, int> dict = new();
+﻿// . = white
+// # =- black
+
+// while top/bottom white continue removing
 
 
-for (int i = 0; i < n; ++i)
+var input = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
+
+var n = input[0];
+var m = input[1];
+
+(int A, int D, int B)[] items = new(int A,  int D, int B)[m];
+
+
+for (int i = 0; i < m; ++i)
 {
-    var entries = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
-    if (!dict.ContainsKey(entries[1]))
-    {
-        dict.Add(entries[1], entries[0]);
-    }
-    var actual = dict[entries[1]];
-    if (entries[0] > actual)
-    {
-        dict[entries[1]] = entries[0];
-    }
+    var buff = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
+    items[i] = (buff[0], buff[1], buff[2]);
 }
 
-
-var q = int.Parse(Console.ReadLine()!);
-var list = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
-foreach (var quer in  list)
-{
-    var bAct = -1;
-
-    foreach (var i in dict)
-    {
-        if(quer >= i.Key) continue;
-        if (i.Value > bAct) 
-        {
-            bAct = i.Value;
-        }
-    }
-    Console.WriteLine(bAct);
-
-}
+var birdsChanges  = items.OrderBy(x => x.D);
