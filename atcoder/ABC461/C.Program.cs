@@ -1,5 +1,5 @@
 ﻿
-/*
+
 var input = Console.ReadLine()!.Split(' ').Select(int.Parse).ToArray();
 
 var N =  input[0];
@@ -48,4 +48,4 @@ for (int i = 0; i < N && K != count; ++i)
 }
 
 Console.WriteLine(answer);
-*/
+
